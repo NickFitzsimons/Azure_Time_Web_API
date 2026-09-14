@@ -7,14 +7,26 @@ namespace MyFirstCloudApi.Controllers;
 public class TimeController : ControllerBase
 {
     // GET /time
-    [HttpGet]
-    public IActionResult GetCurrentTime()
+    [HttpGet("time1")]
+    public IActionResult Time1()
     {
         return Ok(new
         {
-            Service = "Cloud Time Service MacOS",
+            Service = "Cloud Time1 Service",
             CurrentUtcTime = DateTime.UtcNow,
-            Message = "Hello from Azure on macOS"
+            Message = "Hello from Azure Time1"
+        });
+    }
+
+    // GET /time
+    [HttpGet("time2")]
+    public IActionResult Time2()
+    {
+        return Ok(new
+        {
+            Service = "Cloud Time2 Service",
+            CurrentUtcTime = DateTime.UtcNow,
+            Message = "Hello from Azure Time2"
         });
     }
 }
