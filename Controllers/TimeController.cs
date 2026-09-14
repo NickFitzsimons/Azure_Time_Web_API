@@ -12,9 +12,9 @@ public class TimeController : ControllerBase
     {
         return Ok(new
         {
-            Service = "Cloud Time Service",
+            Service = "Cloud Time Service MacOS",
             CurrentUtcTime = DateTime.UtcNow,
-            Message = "Hello from Azure!"
+            Message = "Hello from Azure on macOS"
         });
     }
 }
