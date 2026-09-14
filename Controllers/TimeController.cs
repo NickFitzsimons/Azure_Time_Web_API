@@ -7,6 +7,7 @@ namespace MyFirstCloudApi.Controllers;
 public class TimeController : ControllerBase
 {
     // GET /time
+    [HttpGet]
     [HttpGet("time1")]
     public IActionResult Time1()
     {
